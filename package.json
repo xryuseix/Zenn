@@ -1,0 +1,12 @@
+{
+  "name": "zenn-articles",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "new:article": "zenn new:article --slug",
+    "preview": "zenn preview"
+  },
+  "devDependencies": {
+    "zenn-cli": "^0.1.147"
+  }
+}
