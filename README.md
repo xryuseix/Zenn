@@ -7,7 +7,7 @@
 docker build -t zenn .
 
 # 記事のプレビュー
-docker run --rm -p 8000:8000 -v $(pwd)/articles:/app/articles zenn preview
+docker run --rm -p 8000:8000 -v $(pwd)/articles:/app/articles -v $(pwd)/images:/app/images zenn preview
 
 # 新しい記事の作成
 docker run --rm -v $(pwd)/articles:/app/articles zenn new:article <slug>
