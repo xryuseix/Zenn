@@ -155,6 +155,10 @@ DIVER OSINT CTFで使用しているCI/CDツールのいくつかは、[GitHub M
 - Takumi Guardの導入
   - 開発環境は基本的にdevcontainerで動作するようにしましたが、Webアプリケーションを誤ってローカルにインストールしてしまった場合や、他のツール(brewなど)でインストールするときにnpm installが自動的に呼ばれる可能性があるため、[Takumi Guard](https://flatt.tech/takumi/features/guard)を導入しました。導入はコマンド1つかつ無料です！
 
+```bash
+$ npm config set registry https://npm.flatt.tech
+```
+
 ### その他
 
 上記のファイル単位の対策に加えて、依存するランタイムやパッケージマネージャ自体を減らすことでAttack Surfaceを小さくしました。
